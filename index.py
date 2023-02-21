@@ -45,3 +45,4 @@ texto_final_comp = print(f"El Comp. Nro es: {texto_comp}")
 with open("resultado.txt", "w") as txt:
     txt.write(f"El cuit es: {texto}\n")
     txt.write(f"El Comprobante Nro es: {texto_comp}\n")
+#fin
