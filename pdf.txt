@@ -1,24 +1,33 @@
-ORIGINAL 
-MARCIO Y AGUSTINN B FACTURA 
-ADDAMO SOCIEDAD cOD. 006 
-Punto de Venta: 00003 Comp. Nro: 00001475 
-Razï¿½n Social: MARCIO Y AGUSTIN ADDAMO Fecha de Emisiï¿½n: 11/02/2023 
-Domicilio Comercial: Cordoba 1534-Funes, Santa Fe cUIT: 30715566474 
-Ingresos Brutos: 021-604900-8 
-Fecha de Inicio de Actividades: 01/04/2017 Condiciï¿½n frente al IVA: VA Responsable Inscripto 
-DNI: 14180271 Apellido y Nombre /Razï¿½n Social: FERNANDEZ ADRIANA 
-Condiciï¿½n frente al IVA: Consumidor Final Domicilio: Roldan 
-Condiciï¿½n de venta: Tarjeta de Crï¿½dito 
-Cï¿½digï¿½ Producto/Servicio CantidadU. Medida Precio Unit. % Bonif Imp. Bonif. Subtotal 
-Bateria Williard Renault Scenic 
-Dominio (CDK708) 1,00 unidades 44000,00 0,00 0,00 44000,00 
-Garantia Valida con Control 
-Obligatorio a los 90 dias 
-Sin Exepcion 
-Subtotal: $ 44000,00 
-Importe Otros Tributos: $ 0,00 
-Importe Total: $ 44000,00 
-Pï¿½g. 1/1 CAE N: 73064284586911 
-Fecha de Vto. de CAE: 21/02/2023 
-Comprobante Autorizado 
-Esta Administraciï¿½n Federal no se responsabillza por los datos ingresados on el detallo de la operaciï¿½n 
+FECHA:
+ITEMSeñor/es:
+Domicilio: Calle Nro.PisoDpto.CUIT:
+Condición de IVA:
+DESCRIPCION CANTIDADPRECIOCuenta Nro.:
+C.U.I.T.:
+Condición de VENTA: Remito Nro.:Inicio de Actividades:Ing.Brutos:CODIGO:- A
+OSCAR ALFREDO ANDEREGGEN
+ACONCAGUA - Nro.: 681
+(2300) - RAFAELA - Santa Fe20-13046568-5
+041-015799-6
+01/11/2002NUMERO:
+SEGUROS LA SEGUNDA 124
+J.M. ROSAS 957 0 0
+(2000) - ROSARIO - Santa Fe
+30-50001770-4 Responsable Inscripto
+10 Días S/Fecha Factura14/02/202300003 00003668
+Responsable Inscripto
+Orden de Compra:
+0Teléfono: +54 (3492) 427211
+ALICUOTAIMPORTE001Factura
+100 MANO DE OBRA CHAPA Y PINTURA - Vehículo: PEUGEOT 408
+- Dominio: MLO 692  - Propietario:  BAUDINO RUBEN -
+86.942,15 1,0000 86.942,150 Siniestro:  2706327 21,00
+32.574,38 1,0000 32.574,380 AMPLIACION REPUESTOS 21,00 101
+TOTAL SUB TOTAL NETO GRAVADO I.V.A.
+Observaciones:144.615,00 25.098,47 119.516,53PERCEPCIONES
+0,00 119.516,53
+CIENTO CUARENTA Y CUATRO MIL SEISCIENTOS QUINCE CON 00 CENTAVOS--------
+1Hoja:
+Original-----------------------------------------------------------------------SON PESOS:
+Fecha Vencimiento:C.A.E. Nro.:
+24/02/202373075542026320

@@ -1,7 +1,43 @@
 from PyPDF2 import PdfReader
+import re
+
+#Intento de buscar cuit por cantidad de numeros seguidos en total 11
+def cuit():
+    elcuit = []
+
+    for x in re.findall(r".*((?:\b\d{2}[-]\d{8}[-]\d\b))", cadena, re.DOTALL) or re.findall(r'\d{11}', cadena):
+        print(x)
+    #for x in re.findall(r'\b\d{2}[-]\d{8}[-]\d{1}\b', cadena) or re.findall(r'\d{11}', cadena):
+        if len(x) >= 11:
+            x = re.sub('-','',x)
+            if x != "30500017704":
+                elcuit.append(int(x))
+                break
+        elif len(x) == 11:
+            elcuit.append(int(x))
+        else:
+            elcuit.append("No se encontro el CUIT")
+    print(f"Su Nro de cuit es: {elcuit}")
+
+def comp():
+    elcomp = []
+    for y in re.findall(r'\s\d{8}\n', cadena) or re.findall(r'\s\d{8}\s\n', cadena) or re.findall(r'\d{8}\s\n', cadena) or re.findall(r'\b\d{4}[-]\d{8}\b', cadena):
+    #for y in re.findall(r'\b\d{4}[-]\d{8}\b', cadena):
+        if len(y) >= 13:
+            guion = y.find("-")
+            pasado_guion = guion+1
+            y = y[pasado_guion:]
+            elcomp.append(int(y))
+            break
+        elif len(y) <= 12:
+            elcomp.append(int(y)) #agregar el int
+            break
+        else:
+            elcomp.append("No se encontro el Nro de comp.")
+    print(f"Su Nro de comprobante es: {elcomp}")
 
 #Leemos el pdf entero y luego usamos page para leer la pagina deseada.
-reader = PdfReader("factura.pdf")
+reader = PdfReader("factura4.pdf")
 page = reader.pages[0]
 
 #Extraemos el texto del pdf
@@ -16,33 +52,9 @@ cadena = informacion.upper()
 subcadena = "CUIT" #la 1ra subcadena que queremos
 subcadena2 = "COMP." #la 2da subcadena que queremos
 
-#Corroboramos que ambas esten en el string del txt
-if subcadena in cadena:
-    print("Existe un cuit")
-else:
-    print("no existe un cuit")
-
-if subcadena2 in cadena:
-    print("Existe nro de comprobante")
-else:
-    print("No existe nro de comprobante")
-
-#Localizamos en que parte del txt esta el index de "cuit" 
-resultado = cadena.index("CUIT")
-print(f"El numero del indice de CUIT es {resultado}")
-final = resultado+17                                    #Ultimo numero del cuit saltando cada caracter
-texto = cadena[resultado+6:final]                       #Seleccionamos desde el 1er numero de cuit hasta el ultimo
-texto_final = print(f"El cuit es: {texto}")
-
-#Localizamos en que parte del txt esta el index "COMP."
-resultado_comp = cadena.index("COMP.")
-print(f"El numero del indice de Comp. Nro es {resultado_comp}")
-final_comp = resultado_comp+19                                 #Ultimo nro del comprobante
-texto_comp = cadena[resultado_comp+9:final_comp]               #Seleccionamos desde el 1er numero del comp hasta el ultimo.
-texto_final_comp = print(f"El Comp. Nro es: {texto_comp}")
-
-#Creamos un txt que cotiene el cuit y el nro del comp.
-with open("resultado.txt", "w") as txt:
-    txt.write(f"El cuit es: {texto}\n")
-    txt.write(f"El Comprobante Nro es: {texto_comp}\n")
-#fin
+cuit()
+comp()
+# #Creamos un txt que cotiene el cuit y el nro del comp.
+# with open("resultado.txt", "w") as txt:
+#     txt.write(f"El numero de cuit es {texto}\n")
+#     txt.write(f"El Comprobante Nro es: {texto_comp}\n")
